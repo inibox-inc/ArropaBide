@@ -1,0 +1,107 @@
+  #floating-message {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: min(360px, calc(100vw - 32px));
+    box-sizing: border-box;
+    padding: 14px;
+
+    background: #282a35a6;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      visibility 0.25s ease;
+  }
+
+  #floating-message.fm-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    pointer-events: none;
+  }
+
+  .floating-message-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+
+    /* background: #e879f9; */
+    color: #18181b;
+    font-size: 24px;
+  }
+
+  .floating-message-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .floating-message-content strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .floating-message-content p {
+    margin: 0;
+    color: #d4d4d8;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  #floating-message-close {
+    align-self: flex-start;
+    flex-shrink: 0;
+
+    width: 24px;
+    height: 24px;
+    padding: 0;
+
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: #a1a1aa;
+
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  #floating-message-close:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+
+  @media (max-width: 480px) {
+    #floating-message {
+      left: 12px;
+      bottom: 12px;
+      width: min(340px, calc(100vw - 24px));
+      padding: 12px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #floating-message {
+      transition: none;
+    }
+  }

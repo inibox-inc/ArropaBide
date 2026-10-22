@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto Local, Horarios y Contacto | ArropaBide</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- cabecera comun con navegacion -->
+    <header>
+        <div class="header-contenedor">
+            <div class="nav-flex">
+                <a href="index.html" class="logo-header">
+                    <img src="assets/img/logo.png" alt="Logotipo ArropaBide">
+                    <span>ArropaBide</span>
+                </a>
+                <nav id="menu-principal">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="donaciones.html">Donar y Recogidas</a></li>
+                        <li><a href="kits.html">Kits y Reparto</a></li>
+                        <li><a href="impacto.html">Transparencia</a></li>
+                        <li><a href="contacto.html" class="activo">Punto Local</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- contenido principal de contacto centrado -->
+    <main class="contenedor-centrado">
+        <section>
+            <h1>Punto de Atención Local y Canales de Contacto</h1>
+            <p>Gestionamos todas nuestras actividades de recepción, triaje y entrega desde nuestro local central en el distrito. Si deseas solicitar información, pedir un kit, entregar donaciones o unirte como voluntario, estamos a tu disposición.</p>
+        </section>
+
+        <!-- seccion de datos del local y horarios -->
+        <section class="seccion-blanca">
+            <h2>Ubicación física y horario de atención</h2>
+            <ul class="lista-sencilla">
+                <li><strong>Dirección física:</strong> Local Central ArropaBide, Distrito Otxarkoaga-Txurdinaga, Bilbao.</li>
+                <li><strong>Recepción de donaciones:</strong> Lunes a Jueves de 09:30 a 13:30 y de 16:00 a 18:30.</li>
+                <li><strong>Entrega de kits a usuarios:</strong> Martes y Viernes de 10:00 a 14:00 (atención presencial ordenada).</li>
+                <li><strong>Teléfono de atención:</strong> 944 00 00 00</li>
+                <li><strong>Correo electrónico:</strong> contacto@arropabide.eus</li>
+            </ul>
+        </section>
+
+        <!-- seccion con mapa interactivo en iframe -->
+        <section class="seccion-blanca">
+            <h2>Mapa de localización en el barrio</h2>
+            <div class="contenedor-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11620.123456789!2d-2.9090!3d43.2590!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fd8a4c0a1b3%3A0x123456789abcdef!2sOtxarkoaga-Txurdinaga%2C%20Bilbao!5e0!3m2!1ses!2ses!4v1234567890123" loading="lazy" title="Mapa del local en Otxarkoaga-Txurdinaga"></iframe>
+            </div>
+        </section>
+
+        <!-- formulario de contacto vecinal -->
+        <section class="seccion-blanca">
+            <h2>Escríbenos una consulta o súmate como voluntario</h2>
+            <p>Completa el formulario y te responderemos a la mayor brevedad posible:</p>
+            <div class="form">
+            <!-- formulario con envio mediante mailto -->
+            <form id="formulario-contacto" action="mailto:contacto@arropabide.eus" method="post" enctype="text/plain">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellidos" required>
+
+                <label for="contacto">Correo electrónico o Teléfono:</label>
+                <input type="text" id="contacto" name="contacto" placeholder="Tu email o número de teléfono" required>
+
+                <label for="tipo">Tipo de consulta:</label>
+                <select id="tipo" name="tipo">
+                    <option value="general">Consulta general o información de kits</option>
+                    <option value="comercio">Comercio local interesado en colaborar</option>
+                    <option value="voluntariado">Inscripción como voluntario de triaje o reparto</option>
+                    <option value="otro">Otras consultas</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu consulta o propuesta..." required></textarea>
+
+                <input type="submit" value="Enviar mensaje">
+            </form>
+            <img class="img-form" src="/assets/img/poster-caridad3.jpg" alt="portada"/>
+        </div>
+        </section>
+    </main>
+
+    <!-- pie de pagina sin margenes laterales -->
+    <footer>
+        <div class="footer-contenedor">
+            <div class="footer-flex">
+                <div class="footer-col">
+                    <h3>ArropaBide</h3>
+                    <p>Iniciativa social y tecnológica para el distrito de Otxarkoaga-Txurdinaga. Asociación sin ánimo de lucro.</p>
+                    <p>Concurso de proyectos web — Ayuntamiento de Bilbao.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Norma de Servicio</h3>
+                    <p>Reparto equitativo y digno: 1 kit cada 2 meses por unidad familiar para asegurar el abastecimiento de todo el barrio.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="donaciones.html">Donar y Recogidas</a></li>
+                        <li><a href="kits.html">Kits y Reparto</a></li>
+                        <li><a href="impacto.html">Transparencia</a></li>
+                        <li><a href="contacto.html">Punto Local</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 ArropaBide — Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

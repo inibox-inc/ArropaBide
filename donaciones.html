@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donar y Solicitud de Recogida | ArropaBide</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- cabecera de la pagina -->
+    <header>
+        <div class="header-contenedor">
+            <div class="nav-flex">
+                <a href="index.html" class="logo-header">
+                    <img src="assets/img/logo.png" alt="Logotipo ArropaBide">
+                    <span>ArropaBide</span>
+                </a>
+                <nav id="menu-principal">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="donaciones.html" class="activo">Donar y Recogidas</a></li>
+                        <li><a href="kits.html">Kits y Reparto</a></li>
+                        <li><a href="impacto.html">Transparencia</a></li>
+                        <li><a href="contacto.html">Punto Local</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- contenido principal centrado -->
+    <main class="contenedor-centrado">
+        <section>
+            <h1>Colabora con ArropaBide: Cómo y qué donar</h1>
+            <p>El abastecimiento de nuestro punto local depende de la solidaridad de los particulares y de la colaboración de los pequeños comercios del distrito. Para garantizar la utilidad y dignidad de las entregas, aplicamos criterios claros de admisión.</p>
+        </section>
+
+        <!-- seccion de criterios sin aspecto visible de card -->
+        <section class="seccion-invisible">
+            <h2>Criterios de admisión obligatorios</h2>
+            
+            <div class="caja-aviso">
+                <h3>Productos Aceptados</h3>
+                <ul class="lista-sencilla">
+                    <li><strong>Ropa y calzado:</strong> Prendas limpias, en buen estado de conservación, sin manchas, roturas ni costuras abiertas. Calzado por pares limpios.</li>
+                    <li><strong>Higiene personal:</strong> Jabón corporal, champú, pasta de dientes, cepillos precintados, desodorante, esponjas y pañales infantiles.</li>
+                    <li><strong>Requisito de higiene:</strong> Todos los artículos de aseo deben estar sin abrir, precintados de fábrica y en perfecto estado.</li>
+                </ul>
+            </div>
+
+            <div class="caja-aviso-rojo">
+                <h3>Productos No Aceptados</h3>
+                <ul class="lista-sencilla">
+                    <li>Ropa sucia, rota, desgastada o con desperfectos graves.</li>
+                    <li>Ropa interior usada o prendas inapropiadas.</li>
+                    <li>Productos cosméticos o higiénicos abiertos o caducados.</li>
+                    <li>Mobiliario, colchones o aparatos electrónicos de gran tamaño.</li>
+                </ul>
+                <p><em>Nota informativa:</em> El textil recibido que no supera los filtros de calidad se deriva directamente a plantas de reciclaje textil para su reutilización como fibra industrial.</p>
+            </div>
+        </section>
+
+        <!-- seccion de canales de entrada y comercios colaboradores con foto -->
+        <section class="seccion-blanca">
+            <h2>Entrega presencial y comercios colaboradores</h2>
+            <div class="fila-dos-columnas">
+                <div class="columna-texto">
+                    <p><strong>Particulares:</strong> Puedes traer tus donaciones directamente a nuestro local central dentro de los horarios de apertura ordinarios.</p>
+                    <p><strong>Comercios locales:</strong> Si dispones de excedentes de stock textil o productos higiénicos descatalogados, contacta con nosotros para coordinar la entrega y emitir el justificante de colaboración con el barrio.</p>
+                </div>
+                <div class="columna-foto">
+                    <img src="assets/img/poster-donarropa.jpg" alt="Comercio local entregando stock excedente">
+                </div>
+            </div>
+        </section>
+
+        <!-- seccion del formulario de recogida a domicilio -->
+        <section class="seccion-blanca">
+            <h2>Solicitud de recogida a domicilio</h2>
+            <p>La recogida a domicilio se reserva exclusivamente para personas con movilidad reducida, personas mayores o donaciones comerciales de gran volumen dentro del distrito de Otxarkoaga-Txurdinaga.</p>
+
+            <!-- formulario con envio mediante mailto -->
+             <div class="form">
+            <form id="formulario-recogida" action="mailto:contacto@arropabide.eus" method="post" enctype="text/plain">
+                <label for="nombre">Nombre y Apellidos:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre y apellidos" required>
+
+                <label for="contacto">Teléfono o Correo Electrónico:</label>
+                <input type="text" id="contacto" name="contacto" placeholder="Ej: 600 000 000 o correo@ejemplo.com" required>
+
+                <label for="direccion">Dirección completa en el distrito:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Calle, portal, piso y código postal" required>
+
+                <label for="motivo">Motivo de la solicitud a domicilio:</label>
+                <select id="motivo" name="motivo">
+                    <option value="mayor">Persona mayor</option>
+                    <option value="movilidad">Movilidad reducida</option>
+                    <option value="comercio">Donación de gran volumen / Comercio colaborador</option>
+                </select>
+
+                <label for="descripcion">Descripción del material a donar:</label>
+                <textarea id="descripcion" name="descripcion" placeholder="Indica el número aproximado de bolsas, tallas o tipos de artículos..." required></textarea>
+
+                <input type="submit" value="Enviar solicitud de recogida">
+            </form>
+             <img class="img-form" src="/assets/img/poster-caridad.jpg" alt="portada"/>
+        </div>
+        </section>
+    </main>
+
+    <!-- pie de pagina a pantalla completa sin margenes laterales -->
+    <footer>
+        <div class="footer-contenedor">
+            <div class="footer-flex">
+                <div class="footer-col">
+                    <h3>ArropaBide</h3>
+                    <p>Iniciativa social y tecnológica para el distrito de Otxarkoaga-Txurdinaga. Asociación sin ánimo de lucro.</p>
+                    <p>Concurso de proyectos web — Ayuntamiento de Bilbao.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Norma de Servicio</h3>
+                    <p>Reparto equitativo y digno: 1 kit cada 2 meses por unidad familiar para asegurar el abastecimiento de todo el barrio.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="donaciones.html">Donar y Recogidas</a></li>
+                        <li><a href="kits.html">Kits y Reparto</a></li>
+                        <li><a href="impacto.html">Transparencia</a></li>
+                        <li><a href="contacto.html">Punto Local</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 ArropaBide — Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
