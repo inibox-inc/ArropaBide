@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArropaBide | Donación y Recursos de Primera Necesidad en Otxarkoaga-Txurdinaga</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
-    <link rel="stylesheet" href="assets/css/toast.css">
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
 </head>
 <body>
     <!-- cabecera completa sin margenes laterales -->
     <header>
         <div class="header-contenedor">
             <div class="nav-flex">
-                <a href="index.html" class="logo-header">
+                <a href="#" class="logo-header">
                     <img src="assets/img/logo.png" alt="Logotipo ArropaBide">
                     <span>ArropaBide</span>
                 </a>
                 <!-- menu de navegacion con lista -->
                 <nav id="menu-principal">
                     <ul>
-                        <li><a href="index.html" class="activo">Inicio</a></li>
+                        <li><a href="#" class="activo">Inicio</a></li>
                         <li><a href="donaciones.html">Donar y Recogidas</a></li>
                         <li><a href="kits.html">Kits y Reparto</a></li>
                         <li><a href="impacto.html">Transparencia</a></li>
@@ -110,7 +109,7 @@
                 <div class="footer-col">
                     <h3>Enlaces Rápidos</h3>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Inicio</a></li>
                         <li><a href="donaciones.html">Donar y Recogidas</a></li>
                         <li><a href="kits.html">Kits y Reparto</a></li>
                         <li><a href="impacto.html">Transparencia</a></li>
@@ -126,48 +125,6 @@
 
     <!-- script de la api de youtube para el video de fondo automatico -->
     <script async src="https://www.youtube.com/iframe_api"></script>
-    <script>
-        window.ytPlayer = null;
-        window.onYouTubeIframeAPIReady = () => {
-            let playerElement = document.querySelector("#yt-embed-player");
-            if (playerElement) {
-                window.ytPlayer = new YT.Player('yt-embed-player', {
-                    videoId: playerElement.dataset.id,
-                    playerVars: {
-                        controls: 0,
-                        showinfo: 0,
-                        modestbranding: 1,
-                        wmode: 'transparent',
-                        mute: 1,
-                        progressBar: false,
-                        loop: 1,
-                        rel: 0,
-                        autoplay: 1,
-                        origin: window.location.hostname
-                    },
-                    events: {
-                        'onReady': (e) => { e.target.mute(); },
-                        'onStateChange': (e) => {
-                            if (e.data === YT.PlayerState.ENDED) {
-                                e.target.playVideo();
-                            }
-                        }
-                    }
-                });
-            }
-        };
-    </script>
-<script src="assets/js/toast.js"></script>
-<div id="floating-message" role="status" aria-live="polite">
-    <div class="floating-message-icon">📣</div>
-    <div class="floating-message-content">
-        <strong id="floating-message-title">¡Proyecto Escolar!</strong>
-        <p id="floating-message-text">
-      Esta página no es real, solo es un proyecto escolar, todo es ficiticio.
-    </p>
-</div>
-<button
-    id="floating-message-close" type="button" aria-label="Cerrar mensaje"> x </button>
-</div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
